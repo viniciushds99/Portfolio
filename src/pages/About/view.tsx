@@ -9,6 +9,7 @@ import { TypingTitle } from "../../components/TypingTitle";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import { BackButton } from "../../components/BackButton";
 import { TecnologiesPanel } from "../../components/TecnologiesPanel";
+import GitHubAvatar from "../../assets/github-avatar.png";
 
 export const AboutView = () => {
   return (
@@ -31,7 +32,7 @@ export const AboutView = () => {
         </CardHeader>
         <CardContent className="overflow-auto px-2 2xl:flex 2xl:flex-row 2xl:gap-4 2xl:p-6 lg:flex lg:flex-row lg:gap-4 lg:p-6">
           <div className="w-full flex justify-center">
-            <img src="src/assets/github-avatar.png" className="w-[500px]" />
+            <img src={GitHubAvatar} className="w-[500px]" />
           </div>
           <div className="flex flex-col w-full gap-4">
             <p className="break-all">

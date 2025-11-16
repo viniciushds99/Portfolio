@@ -10,6 +10,8 @@ import DownloadIcon from "@mui/icons-material/Download";
 import { pdfjs, Document, Page } from "react-pdf";
 import type { useResumeModel } from "./model";
 import { BackButton } from "../../components/BackButton";
+import CV from "../../assets/DevFullStack_ViniciusHenriqueSilva_CV.pdf";
+
 
 export const ResumeView = ({
   onDocumentLoadSuccess,
@@ -40,7 +42,7 @@ export const ResumeView = ({
         <CardContent>
           <div className="flex justify-center mb-4">
             <a
-              href="src\assets\DevFullStack_ViniciusHenriqueSilva_CV.pdf"
+              href={CV}
               className="w-[200px] border-2 h-9 px-4 py-2 rounded-md text-sm font-medium transition-all inline-flex items-center justify-center hover:bg-neutral-800 duration-500 cursor-pointer"
               download
             >
@@ -50,7 +52,7 @@ export const ResumeView = ({
           </div>
           <div className="flex justify-center max-h-[500px] overflow-auto">
             <Document
-              file="src\assets\DevFullStack_ViniciusHenriqueSilva_CV.pdf"
+              file={CV}
               onLoadSuccess={onDocumentLoadSuccess}
               className="w-[80%]"
             >

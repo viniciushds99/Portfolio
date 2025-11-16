@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 import { Typing } from "../../components/Typing";
 import { motion } from "motion/react";
 import type { useHomeModel } from "./model";
+import Avatar from "../../assets/avatar-image.png";
 
 export const HomeView = ({ about, experience, project, resume, contact }:ReturnType<typeof useHomeModel>) => {
   return (
@@ -30,7 +31,7 @@ export const HomeView = ({ about, experience, project, resume, contact }:ReturnT
       <Card className="w-full max-w-sm bg-neutral-900 border-0 text-white">
         <CardHeader className="text-center">
           <img
-            src="src\assets\avatar-image.png"
+            src={Avatar}
             className="w-40 h-[170px] mx-auto my-1 rounded-full border-4"
           />
           <CardTitle>
