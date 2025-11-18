@@ -54,7 +54,7 @@ export const ProjectView = () => {
                         </span>
                         <CardDescription>{project.description}</CardDescription>
                         <div className="flex py-2 gap-3">
-                          <Button>
+                          <Button onClick={() => window.open(project.repositoryUrl, "_blank")}>
                             <GitHubIcon /> Repo
                           </Button>
                           <Button
@@ -71,8 +71,8 @@ export const ProjectView = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="invisible sm:visible" />
+            <CarouselNext className="invisible sm:visible" />
           </Carousel>
         </CardContent>
       </Card>

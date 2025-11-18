@@ -35,7 +35,7 @@ export const AboutView = () => {
             <img src={GitHubAvatar} className="w-[500px]" />
           </div>
           <div className="flex flex-col w-full gap-4">
-            <p className="break-all">
+            <p className="word-break text-justify text-[16px]">
               Olá! Me chamo{" "}
               <strong className="text-purple-700">
                 Vinícius Henrique da Silva.
