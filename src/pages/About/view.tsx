@@ -43,7 +43,7 @@ export const AboutView = () => {
               <br />
               Possuo{" "}
               <strong className="text-purple-700">
-                dois anos de experiência
+                três anos de experiência
               </strong>{" "}
               como{" "}
               <strong className="text-purple-700">
